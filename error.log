@@ -1,0 +1,29 @@
+
+nx generate <generator> [_..]
+
+Generate or update source code (e.g., nx generate @nrwl/js:lib mylib).
+
+Positionals:
+  generator  Name of the generator (e.g., @nrwl/js:library, library)  [string] [required]
+
+Options:
+      --version      Show version number  [boolean]
+  -d, --dryRun       Preview the changes without updating files  [boolean] [default: false]
+      --interactive  When false disables interactive input prompts for options  [boolean] [default: true]
+
+Error: Unable to connect to the daemon process.
+Messages from the log:
+[NX Daemon Server] - 2022-08-24T09:26:25.748Z - Started listening on: /home/salman/kwanso/nx/monorepo/node_modules/.cache/nx/d/d.sock
+
+ >  NX   inotify_add_watch on '/home/salman/kwanso/nx/monorepo/.vscode' failed: No space left on device
+
+
+
+
+More information: /home/salman/kwanso/nx/monorepo/node_modules/.cache/nx/d/daemon.log
+    at daemonProcessException (/home/salman/kwanso/nx/monorepo/node_modules/nx/src/daemon/client/client.js:66:16)
+    at Socket.<anonymous> (/home/salman/kwanso/nx/monorepo/node_modules/nx/src/daemon/client/client.js:155:29)
+    at Socket.emit (node:events:527:28)
+    at emitErrorNT (node:internal/streams/destroy:157:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:122:3)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)

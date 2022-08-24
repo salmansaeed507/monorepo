@@ -1,0 +1,3 @@
+release: npm run typeorm migration:run -- -d datasource.ts
+web: npm run start:prod
+ssl: {rejectUnauthorized: false}
